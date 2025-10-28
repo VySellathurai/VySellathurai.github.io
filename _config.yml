@@ -7,9 +7,10 @@ baseurl: ""
 # Informations personnelles
 author:
   name: Vyach Sellathurai
+  title: Ingénieur Cloud AWS
   email: sellathurai.vyach@yahoo.fr
   github: VySellathurai
-  linkedin: https://www.linkedin.com/in/vyach-sellathurai-9a861296/
+  linkedin: vyach-sellathurai-9a861296
 
 # Configuration Jekyll
 markdown: kramdown

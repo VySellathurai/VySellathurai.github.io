@@ -16,8 +16,9 @@
             <div class="nav-brand">{{ site.author.name }}</div>
             <div class="nav-links">
                 <a href="#about">À propos</a>
+                <a href="#experience">Expérience</a>
                 <a href="#skills">Compétences</a>
-                <a href="#projects">Projets</a>
+                <a href="#education">Formation</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -27,7 +28,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 {{ site.author.name }}. Créé avec Jekyll, Cursor, Claude.ai & ❤️</p>
+            <p>&copy; 2025 {{ site.author.name }}. Ingénieur Cloud & DevOps</p>
         </div>
     </footer>
 
@@ -51,6 +52,24 @@
             } else {
                 navbar.classList.remove('scrolled');
             }
+        });
+
+        // Animation des barres de compétences au scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.dataset.width;
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-progress').forEach(bar => {
+            observer.observe(bar);
         });
     </script>
 </body>
