@@ -1,3 +1,25 @@
-theme: jekyll-theme-minimal
-title: Vyach Sellathurai
-description: Portfolio
+# Configuration du site
+title: Votre Nom
+description: Ingénieur Système passionné par le web moderne
+url: "https://vsellathurai.github.io"
+baseurl: ""
+
+# Informations personnelles
+author:
+  name: Vyach Sellathurai
+  email: sellathurai.vyach@yahoo.fr
+  github: VySellathurai
+  linkedin: https://www.linkedin.com/in/vyach-sellathurai-9a861296/
+
+# Configuration Jekyll
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclusions
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
