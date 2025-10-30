@@ -1,0 +1,88 @@
+categories:
+  - id: cloud
+    label: Cloud & Infrastructure
+    chipClass: chip-domain
+    cellClass: cat-cloud
+  - id: devops
+    label: DevOps & CI/CD
+    chipClass: chip-devops
+    cellClass: cat-devops
+  - id: dev
+    label: Développement
+    chipClass: chip-dev
+    cellClass: cat-dev
+
+skills:
+  - id: aws
+    abbr: AWS
+    name: AWS Cloud
+    details: EC2, S3, Lambda, DynamoDB, CloudFront, API Gateway, Cognito
+    category: cloud
+    col: 1
+    row: 1
+    icon: cloud
+  - id: iac
+    abbr: IaC
+    name: Infrastructure as Code
+    details: Terraform, CloudFormation, CDK, Serverless Framework
+    category: cloud
+    col: 2
+    row: 1
+    icon: grid
+  - id: serverless
+    abbr: SRV
+    name: Serverless
+    details: Lambda, Step Functions, SNS, SQS, AppSync
+    category: cloud
+    col: 3
+    row: 1
+    icon: bolt
+  - id: cicd
+    abbr: CI
+    name: CI/CD
+    details: GitHub Actions, CodePipeline, Travis CI, Atlantis
+    category: devops
+    col: 10
+    row: 1
+    icon: settings
+  - id: monitoring
+    abbr: MON
+    name: Monitoring
+    details: Datadog, CloudWatch, Dashboards KPI
+    category: devops
+    col: 11
+    row: 1
+    icon: chart
+  - id: linux
+    abbr: LNX
+    name: Linux & Serveurs
+    details: CentOS, Apache, Nginx, CloudFront CDN
+    category: devops
+    col: 12
+    row: 1
+    icon: server
+  - id: node
+    abbr: JS
+    name: Node.js
+    details: Express, Serverless, API REST
+    category: dev
+    col: 1
+    row: 2
+    icon: arrows
+  - id: react
+    abbr: R
+    name: React
+    details: Développement d'interfaces CMS
+    category: dev
+    col: 2
+    row: 2
+    icon: layout
+  - id: database
+    abbr: DB
+    name: Bases de données
+    details: DynamoDB, Elasticsearch, ETL
+    category: dev
+    col: 3
+    row: 2
+    icon: database
+
