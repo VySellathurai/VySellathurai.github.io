@@ -55,23 +55,7 @@
             }
         });
 
-        // Animation des barres de compétences au scroll
-        const observerOptions = {
-            threshold: 0.5,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.width = entry.target.dataset.width;
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.skill-progress').forEach(bar => {
-            observer.observe(bar);
-        });
+        // (Supprimé) Animation des barres de compétences — plus utilisée
     </script>
 </body>
 </html>

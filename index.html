@@ -128,121 +128,78 @@ title: Accueil
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
             Compétences Techniques
         </h2>
-        
-        <div class="skills-category">
-            <h3 class="category-title">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
-                Cloud & Infrastructure
-            </h3>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-name">AWS Cloud</span>
-                        <span class="skill-percent">95%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="95%" style="width: 0%"></div>
-                    </div>
-                    <p class="skill-details">EC2, S3, Lambda, DynamoDB, CloudFront, API Gateway, Cognito</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-name">Infrastructure as Code</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="90%" style="width: 0%"></div>
-                    </div>
-                    <p class="skill-details">Terraform, CloudFormation, CDK, Serverless Framework</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-name">Serverless</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="90%" style="width: 0%"></div>
-                    </div>
-                    <p class="skill-details">Lambda, Step Functions, SNS, SQS, AppSync</p>
-                </div>
-            </div>
+
+        <div class="skills-legend">
+            <span class="chip chip-domain">Cloud & Infrastructure</span>
+            <span class="chip chip-devops">DevOps & CI/CD</span>
+            <span class="chip chip-dev">Développement</span>
         </div>
 
-        <div class="skills-category">
-            <h3 class="category-title">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                DevOps & CI/CD
-            </h3>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-name">CI/CD</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85%" style="width: 0%"></div>
-                    </div>
-                    <p class="skill-details">GitHub Actions, CodePipeline, Travis CI, Atlantis</p>
+        <div class="skills-periodic">
+            <div class="skill-cell cat-cloud" data-details="EC2, S3, Lambda, DynamoDB, CloudFront, API Gateway, Cognito">
+                <div class="icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 17.58A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 4 16.25"></path><path d="M16 16h1a3 3 0 0 1 0 6H7a4 4 0 0 1-1-7.87"></path></svg>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-name">Monitoring</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="90%" style="width: 0%"></div>
-                    </div>
-                    <p class="skill-details">Datadog, CloudWatch, Dashboards KPI</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-name">Linux & Serveurs</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85%" style="width: 0%"></div>
-                    </div>
-                    <p class="skill-details">CentOS, Apache, Nginx, CloudFront CDN</p>
-                </div>
+                <div class="abbr">AWS</div>
+                <div class="name">AWS Cloud</div>
             </div>
-        </div>
+            <div class="skill-cell cat-cloud" data-details="Terraform, CloudFormation, CDK, Serverless Framework">
+                <div class="icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                </div>
+                <div class="abbr">IaC</div>
+                <div class="name">Infrastructure as Code</div>
+            </div>
+            <div class="skill-cell cat-cloud" data-details="Lambda, Step Functions, SNS, SQS, AppSync">
+                <div class="icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 10h4l3 10 4-18 3 8h4"></path></svg>
+                </div>
+                <div class="abbr">SRV</div>
+                <div class="name">Serverless</div>
+            </div>
 
-        <div class="skills-category">
-            <h3 class="category-title">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                Développement
-            </h3>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-name">Node.js</span>
-                        <span class="skill-percent">90%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="90%" style="width: 0%"></div>
-                    </div>
-                    <p class="skill-details">Express, Serverless, API REST</p>
+            <div class="skill-cell cat-devops" data-details="GitHub Actions, CodePipeline, Travis CI, Atlantis">
+                <div class="icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c0 .69.28 1.32.73 1.77.45.45 1.08.73 1.77.73z"></path></svg>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-name">React</span>
-                        <span class="skill-percent">80%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="80%" style="width: 0%"></div>
-                    </div>
-                    <p class="skill-details">Développement d'interfaces CMS</p>
+                <div class="abbr">CI</div>
+                <div class="name">CI/CD</div>
+            </div>
+            <div class="skill-cell cat-devops" data-details="Datadog, CloudWatch, Dashboards KPI">
+                <div class="icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"></path><path d="M19 9l-5 5-4-4-3 3"></path></svg>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-header">
-                        <span class="skill-name">Bases de données</span>
-                        <span class="skill-percent">85%</span>
-                    </div>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="85%" style="width: 0%"></div>
-                    </div>
-                    <p class="skill-details">DynamoDB, Elasticsearch, ETL</p>
+                <div class="abbr">MON</div>
+                <div class="name">Monitoring</div>
+            </div>
+            <div class="skill-cell cat-devops" data-details="CentOS, Apache, Nginx, CloudFront CDN">
+                <div class="icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="13" width="20" height="8" rx="2" ry="2"></rect></svg>
                 </div>
+                <div class="abbr">LNX</div>
+                <div class="name">Linux & Serveurs</div>
+            </div>
+
+            <div class="skill-cell cat-dev" data-details="Express, Serverless, API REST">
+                <div class="icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"></path><path d="M8 6l-6 6 6 6"></path></svg>
+                </div>
+                <div class="abbr">JS</div>
+                <div class="name">Node.js</div>
+            </div>
+            <div class="skill-cell cat-dev" data-details="Développement d'interfaces CMS">
+                <div class="icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"></rect><path d="M3 10h18"></path></svg>
+                </div>
+                <div class="abbr">R</div>
+                <div class="name">React</div>
+            </div>
+            <div class="skill-cell cat-dev" data-details="DynamoDB, Elasticsearch, ETL">
+                <div class="icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v6c0 1.7 4 3 9 3s9-1.3 9-3V5"></path><path d="M3 11v6c0 1.7 4 3 9 3s9-1.3 9-3v-6"></path></svg>
+                </div>
+                <div class="abbr">DB</div>
+                <div class="name">Bases de données</div>
             </div>
         </div>
     </div>
