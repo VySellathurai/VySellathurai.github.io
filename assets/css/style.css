@@ -145,12 +145,20 @@ body {
 
 .avatar {
   margin: 0 auto 2rem;
-  width: 128px;
-  height: 128px;
+  width: 160px;
+  height: 160px;
+  max-width: 160px;
+  max-height: 160px;
   background: linear-gradient(135deg, var(--purple), var(--orange));
   border-radius: 50%;
-  padding: 4px;
+  padding: 5px;
   animation: float 3s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3),
+    0 8px 32px rgba(249, 115, 22, 0.2);
+  overflow: hidden;
 }
 
 @keyframes float {
@@ -167,9 +175,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
   border-radius: 50%;
   display: block;
   transition: transform 0.3s ease;
+  border: 3px solid var(--bg-primary);
 }
 
 .avatar-image:hover {
