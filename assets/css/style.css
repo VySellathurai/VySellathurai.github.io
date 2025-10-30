@@ -532,8 +532,9 @@ body {
 
 .skills-periodic {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(12, minmax(72px, 1fr));
+  grid-auto-rows: 140px;
+  gap: 0.9rem;
 }
 
 .skill-cell {
@@ -618,7 +619,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .skills-periodic { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .skills-periodic { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: auto; }
+  .skills-periodic .skill-cell { grid-column: auto !important; grid-row: auto !important; }
   .skill-cell { aspect-ratio: auto; min-height: 120px; }
   .skill-cell::after { opacity: 1; transform: none; position: static; margin-top: 0.4rem; background: rgba(255, 255, 255, 0.06); }
 }
