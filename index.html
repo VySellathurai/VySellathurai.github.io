@@ -139,7 +139,7 @@ title: Accueil
         <div class="skills-periodic">
             {% for s in site.data.skills.skills %}
             {% assign cat = site.data.skills.categories | where: 'id', s.category | first %}
-            <div class="skill-cell {{ cat.cellClass }}" style="grid-column: {{ s.col }} / span 1; grid-row: {{ s.row }}" data-details="{{ s.details }}">
+            <div class="skill-cell {{ cat.cellClass }}" style="grid-column: {{ s.col }} / span 1; grid-row: {{ s.row }}" data-details="{{ s.details }}" data-category="{{ s.category }}" aria-label="{{ s.name }}: {{ s.details }}">
                 <div class="icon" aria-hidden="true">
                     {% case s.icon %}
                     {% when 'cloud' %}<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 17.58A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 4 16.25"></path><path d="M16 16h1a3 3 0 0 1 0 6H7a4 4 0 0 1-1-7.87"></path></svg>

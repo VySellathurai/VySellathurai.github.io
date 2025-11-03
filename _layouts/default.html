@@ -55,7 +55,66 @@
             }
         });
 
-        // (Supprimé) Animation des barres de compétences — plus utilisée
+        // Filtrage des compétences par catégorie
+        (function () {
+            const legend = document.querySelector('.skills-legend');
+            if (!legend) return;
+            const chips = Array.from(legend.querySelectorAll('.chip'));
+            const cells = Array.from(document.querySelectorAll('.skill-cell'));
+
+            // Rendez les chips accessibles
+            chips.forEach(chip => {
+                chip.setAttribute('role', 'button');
+                chip.setAttribute('tabindex', '0');
+            });
+
+            const getCategoryFromChip = (chip) => {
+                // cat.chipClass est de type "chip-<id>", on tente d'en déduire l'id si besoin
+                // Mais on préfère mapper via le texte
+                const label = chip.textContent.trim();
+                // Cherche la catégorie correspondante dans une data embarquée si disponible plus tard
+                // Fallback: aucune correspondance stricte, on utilise classes: chip-domain/devops/dev
+                if (chip.classList.contains('chip-domain')) return 'cloud';
+                if (chip.classList.contains('chip-devops')) return 'devops';
+                if (chip.classList.contains('chip-dev')) return 'dev';
+                return null;
+            };
+
+            function applyFilter(activeChip) {
+                const active = activeChip && activeChip.classList.contains('active');
+                chips.forEach(c => c.classList.remove('active'));
+                if (active) {
+                    // Toggle off: montrer tout
+                    cells.forEach(cell => { cell.style.display = ''; });
+                    return;
+                }
+                activeChip.classList.add('active');
+                const cat = getCategoryFromChip(activeChip);
+                if (!cat) {
+                    cells.forEach(cell => { cell.style.display = ''; });
+                    return;
+                }
+                cells.forEach(cell => {
+                    const cellCat = cell.getAttribute('data-category');
+                    cell.style.display = (cellCat === cat) ? '' : 'none';
+                });
+            }
+
+            function onChipActivate(e) {
+                const chip = e.currentTarget;
+                applyFilter(chip);
+            }
+
+            chips.forEach(chip => {
+                chip.addEventListener('click', onChipActivate);
+                chip.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        onChipActivate(e);
+                    }
+                });
+            });
+        })();
     </script>
 </body>
 </html>

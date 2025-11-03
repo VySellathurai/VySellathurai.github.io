@@ -541,6 +541,11 @@ body {
   color: var(--text-primary);
 }
 
+.chip.active {
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.25) inset;
+  border-color: rgba(249, 115, 22, 0.5);
+}
+
 .chip-domain {
   border-color: rgba(139, 92, 246, 0.35);
   background: rgba(139, 92, 246, 0.12);
