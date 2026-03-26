@@ -2,25 +2,20 @@
 
 Site personnel créé avec Jekyll et hébergé sur GitHub Pages.
 
-## 🚀 Ingénieur Cloud AWS | DevOps | Full Stack
+## 🚀 Architecte Cloud AWS | DevOps | Full Stack
 
 Portfolio professionnel présentant mon expertise en infrastructure cloud, DevOps et développement.
 
+## ▶️ Commandes (Makefile)
+
+- `make install` : installe les dépendances (Bundle)
+- `make start` : lance le serveur Jekyll en live reload sur le port 4000
+- `make clean` : supprime les dossiers/fichiers générés (`vendor/bundle`, `.bundle`, `Gemfile.lock`)
+- `make help` : affiche la liste des commandes disponibles
+
 ## 🛠️ Technologies utilisées
 
-- Jekyll (générateur de site statique)
+- Jekyll
 - HTML5 / CSS3 avec animations
 - JavaScript vanilla
-- GitHub Pages (hébergement gratuit)
-
-## 📦 Structure du projet
-
-.
-├── \_config.yml # Configuration Jekyll
-├── \_layouts/
-│ └── default.html # Template HTML principal
-├── assets/
-│ └── css/
-│ └── style.css # Styles CSS personnalisés
-├── index.html # Page d'accueil
-└── README.md # Ce fichier
+- GitHub Pages
