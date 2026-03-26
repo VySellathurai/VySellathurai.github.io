@@ -1,0 +1,23 @@
+# Typical Ruby/Rails ignores
+.bundle/
+vendor/
+log/
+tmp/
+*.gem
+**/.DS_Store
+coverage/
+.yardoc
+.byebug_history
+.rspec_status
+
+# Ignore Ruby-specific swap and temp files
+*.swp
+*.swo
+*.bak
+
+# Others
+/.env
+.env*
+/config/secrets.yml
+
+/_site/
